@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+ outline: 2px solid orangered;
+}
+
+body {
+  background: linear-gradient(to right, yellow, red);
+}
+
+input {
+ background-color: rgba(255 255 255 / .3);
+}
+
+.search-container {
+ position: fixed;
+ top: 300px;
+ left: 50%;
+ translate: -250px;
+}
+
+.search-container input,
+.search-container .suggestions {
+  width: 500px;
+}
+
+.search-container input {
+ height: 2rem;
+}
+
+.search-container .suggestions {
+   background-color: rgba(255 255 255 / .4);
+   position: absolute;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ul.has-suggestions { */
+  /* TODO */
+/* } */
+
+ul li {
+  text-align: start;
+  padding: .5rem;
+}
+
+ul li:hover {
+  background-color: orangered;
+}
