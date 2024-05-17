@@ -36,7 +36,6 @@ function showSuggestions(results, inputVal) {
 }
 
 function useSuggestion(e) {
-	// TODO
 	// put event target into the input box
 	let chosenSuggestion = e.target.innerText;
 	input.value = chosenSuggestion;
@@ -44,9 +43,10 @@ function useSuggestion(e) {
 }
 
 function clearDropdown() {
-	while (suggestions.firstChild){
-		suggestions.removeChild(suggestions.lastChild);
-	}
+	// while (suggestions.firstChild){
+	// 	suggestions.removeChild(suggestions.lastChild);
+	// }
+	suggestions.innerHTML = ""; // this is less resource intensive
 }
 
 input.addEventListener('keyup', searchHandler);

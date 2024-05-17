@@ -8,10 +8,14 @@
 
 body {
   background: linear-gradient(to right, yellow, red);
+  /* background: linear-gradient(45deg, red, blue); */
+  /* background: linear-gradient(#e66465, #9198e5); */
+  /* background-color: red; */
 }
 
 input {
- background-color: rgba(255 255 255 / .3);
+ background-color: rgba(255, 255, 255, .3);
+ border-radius: 20px; /* As suggested by reviewer - Michael Ogu*/
 }
 
 .search-container {
@@ -31,8 +35,9 @@ input {
 }
 
 .search-container .suggestions {
-   background-color: rgba(255 255 255 / .4);
-   position: absolute;
+   background-color: rgba(255, 255, 255, .4);
+   /* position is redundant by itself - needs to have top/bottom/left/right to do anything */
+   /* position: absolute; */
 }
 
 ul {
@@ -42,7 +47,6 @@ ul {
 }
 
 /* ul.has-suggestions { */
-  /* TODO */
 /* } */
 
 ul li {
